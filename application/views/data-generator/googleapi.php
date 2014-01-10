@@ -1,8 +1,5 @@
 <?php $this->load->helper('url'); ?>
 <?php $this->load->helper('form'); ?>
-	
-<script type="text/javascript" src="http://jzaefferer.github.com/jquery-validation/jquery.validate.js"></script>
-
 
 <script type="text/javascript">
 
@@ -14,24 +11,24 @@ $(document).ready(function(){
 	  var $err_open = "<div class='text-error'><small>";
 	  var $err_close = "</small></div>";
 	  $("#inst").focus();
-	  
-  $("#search-form").validate({         
+
+  $("#search-form").validate({
 	  errorLabelContainer: "#search-error",
 	  errorPlacement: function(error, element) {
 			error.insertAfter(element.next());
 		    },
-		   
-		rules: {  
+
+		rules: {
 			inst: {
 				required: true
 			}
-		  
+
 		},
-		
+
 		messages: {
 			inst: {
 		       required: $err_open + "Enter someting!" + $err_close
-		     }    
+		     }
 		 }
 	});
 
@@ -44,22 +41,22 @@ $(document).ready(function(){
 
 
 	<div class="container">
-	
+
 	  <div class="row">
-	    
+
 	    <div class="span12">
 	    <h3>Search for institutions</h3>
-    	<?php 
+    	<?php
       	$attributes = array('class'=> "form-search", 'id' =>"search-form");
       	echo form_open('data-generator/googleapi/search', $attributes); ?>
-      	
+
       	<div class="input-append">
 		  <input class="span6 search-query" placeholder="Search" name="inst" id="inst" type="text" value="<?php if(isset($search)) echo $search; ?>">
 		  <button class="btn" id="search-go" type="submit">Go!</button>
 		</div>
       	</form>
-      	
-      	<?php if (isset($search_results)) 
+
+      	<?php if (isset($search_results))
       	{?>
       	<table class="table table-condensed table-bordered">
 			<h3>Search results</h3>
@@ -74,7 +71,7 @@ $(document).ready(function(){
 		    </tr>
 		  </thead>
 		  <tbody>
-		  	<?php 
+		  	<?php
 			$x=1;
 			foreach ($search_results as $inst)
 			{
@@ -96,29 +93,29 @@ $(document).ready(function(){
 			  		<a href="<?php echo $inst["maps_url"];?>" target="_blank" >Google Maps</a>
 			  		</td>
 			  		<td>
-			  		<?php 
-			  		if ($inst["in_db"]==FALSE) 
+			  		<?php
+			  		if ($inst["in_db"]==FALSE)
 					{
 					?>
 			  		<a href="<?php echo site_url();?>data-generator/googleapi/save">Save</a>
-			  		<?php 
+			  		<?php
 					}
 					else
 					{?>
 					<p class="muted">Allready saved</p>
-					<?php 
+					<?php
 					}?>
-			  		</td>		  				  		
+			  		</td>
 			  	</tr>
-	  		<?php 
+	  		<?php
 			$x++;
 			}
 		  	?>
 		  </tbody>
 		</table>
-      	
-      	
-      	<?php 
+
+
+      	<?php
       	}
       	if (isset($search) && (!isset($search_results)))
       	{
@@ -129,9 +126,9 @@ $(document).ready(function(){
       		echo "<h5>New Institution successfully saved!</h5>";
       	}
       	?>
-      	
+
 	    </div>
-	    
+
 	    <div class="span12">
 		  <table class="table table-condensed table-bordered">
 			<h3>List of saved Institutions</h3>
@@ -145,8 +142,8 @@ $(document).ready(function(){
 		    </tr>
 		  </thead>
 		  <tbody>
-		  	<?php 
-		  	if ($institutions != NULL) 
+		  	<?php
+		  	if ($institutions != NULL)
 			{
 				$x=1;
 				foreach ($institutions as $inst)
@@ -167,22 +164,18 @@ $(document).ready(function(){
 				  		</td>
 				  		<td>
 				  		<a href="<?php echo $inst["maps_url"];?>" target="_blank">Google Maps</a>
-				  		</td>				  				  				  		
+				  		</td>
 				  	</tr>
-		  	<?php 
+		  	<?php
 				$x++;
 				}
 			}
 		  	?>
 		  </tbody>
 		</table>
-		
-	    </div>
-	  
-	  </div>
-	
-	</div>  
-	  
 
-	
-	
+	    </div>
+
+	  </div>
+
+	</div>

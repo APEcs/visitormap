@@ -19,11 +19,11 @@ function initializeInstitutionGoogle() {
 		mapTypeControl: true,
 		scaleControl: false,
 		streetViewControl: false,
-		overviewMapControl: false	
+		overviewMapControl: false
   }
   map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 
-  google.maps.event.addListener(map, 'rightclick', function(event) { 
+  google.maps.event.addListener(map, 'rightclick', function(event) {
     placeMarker(event.latLng);
   });
 
@@ -55,7 +55,7 @@ function placeMarker(location) {
 	}
 	$("#lat").val(location.lat());
 	$("#long").val(location.lng());
-	  
+
 }
 
 $('#new-institution').on('shown', function () {
@@ -70,7 +70,7 @@ function loadMapsScript() {
 	if (!map) {
 		  var script = document.createElement("script");
 		  script.type = "text/javascript";
-		  script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyCAsKbnxVIdGUz_eNxKnZpID2JIrL-VAxs&sensor=false&callback=initializeInstitutionGoogle";
+		  script.src = "http://maps.googleapis.com/maps/api/js?key=" + google_api_key + "&sensor=false&callback=initializeInstitutionGoogle";
 		  document.body.appendChild(script);
 		}
 	}
@@ -78,12 +78,12 @@ function loadMapsScript() {
 
 
 function searchInstitution()
-{	
+{
 	var post_data = {
 		institution: $("#institution_name").val(),
 		csrf_token_name: $("input[name=csrf_token_name]").val()
 	};
-	var posting = $.post( SITE_URL +'institutions/search_institution', post_data, handleSearchResponse);	
+	var posting = $.post( SITE_URL +'institutions/search_institution', post_data, handleSearchResponse);
 }
 
 function handleSearchResponse(data)
@@ -93,7 +93,7 @@ function handleSearchResponse(data)
 		$("#inst-save").toggle();
 		google.maps.event.trigger(map, 'resize');
 	}
-	
+
 	if(data)
 	{
 		$("#search-error").remove();
@@ -101,17 +101,17 @@ function handleSearchResponse(data)
 		placeMarker(point);
 
 		populateFormFields(data[0]);
-		
+
 		map.setZoom(7);
 		map.setCenter(point);
-	}	
+	}
 	else
 	{
 		if(!$("#search-error").is(":visible")) {
 		$("#search").after("<div id='search-error' class='text-error text-error-inline'>No results found. Mark the location manually.</div>");
 		}
 	}
-	
+
 }
 
 function populateFormFields(data)
@@ -156,10 +156,10 @@ function saveInstitution(e)
 
 
 			$.post( SITE_URL +'institutions/new_institution', post_data, handleAJAXResponse);
-			
+
 		}
 
-	
+
 }
 
 
@@ -169,13 +169,13 @@ function handleAJAXResponse(data)
 	if($(location).attr('href').indexOf("new_visit") >= 0) {
 		$("#institution").append("<option value="+data.id+">"+data.name+"</option>");
 		$("#institution").select2("val", data.id);
-		
+
 		$('#department').find('option').remove().end()
 	    .append('<option value="0">No Department/School</option>')
 	    .val('0');
 		$("#department").select2("val", "0");
 		$("#inst_name_for_new_dep").val($('#institution :selected').html());
-		
+
 		if(!$("#new_department_button").is(":visible")) {
 			$("#new_department_button").toggle();
 		}
@@ -188,13 +188,13 @@ function handleAJAXResponse(data)
 		}
 		$(".new-inst-entered").slideDown();
 	}
-	
+
 	$("#institution_name").val("");
 	$("#description").val("");
 	$("#address1").val("");
 	$("#address2").val("");
 	$("#postal_code").val("");
-	
+
 	$('#new-institution').modal('hide')
 
 }
@@ -213,23 +213,23 @@ $(document).ready(function(){
 
 	var $err_open = "<div class='text-error text-error-inst'><small>";
 	var $err_close = "</small></div>";
-	  
-	$("#new-institution-form").validate({         
-		
+
+	$("#new-institution-form").validate({
+
 		errorPlacement: function(error, element) {
 			error.insertAfter(element.next());
-		  },      
-		  
-		rules: {  
+		  },
+
+		rules: {
 			institution_name: "required",
 			countrySelector: "required",
 			lat: "required"
 		},
-		
+
 		messages: {
 			institution_name: $err_open + "Institution name is required" + $err_close,
 			countrySelector: $err_open + "Please select the country" + $err_close,
-			lat: $err_open + "Please specify the location on the map" + $err_close,  
+			lat: $err_open + "Please specify the location on the map" + $err_close,
 		 }
 	});
 });

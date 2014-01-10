@@ -89,7 +89,7 @@
              </td>
              <td style="border-collapse: collapse; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;" width="580">
               <div align="center">
-               <p style="color: #ffffff; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif; font-size: 36px; margin-bottom: 30px; margin-top: 0px; text-align: center;"><strong><a href="http://www.karlkerem.com/brainspotting" style="color: #ffffff; font-size: 36px; font-weight: bold; text-decoration: none;">CS Research Visitors Map</a></strong> </p> </div> </td>
+               <p style="color: #ffffff; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif; font-size: 36px; margin-bottom: 30px; margin-top: 0px; text-align: center;"><strong><a href="http://www.cs.manchester.ac.uk/our-research/research-visitors/" style="color: #ffffff; font-size: 36px; font-weight: bold; text-decoration: none;">CS Research Visitors Map</a></strong> </p> </div> </td>
              <td style="border-collapse: collapse; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;" width="30">
              </td> </tr> </tbody>
           </table> </td> </tr>
@@ -118,18 +118,18 @@
                  <td style="border-collapse: collapse; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;" width="580">
                   <p align="left" style="color: #333333; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif; font-size: 18px; font-weight: bold; line-height: 24px; margin-bottom: 18px; margin-top: 0px;">
                   Huston, we have a problem.</p>
-                  <div align="left" style="color: #333333; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif; font-size: 13px; line-height: 18px; margin-bottom: 18px; margin-top: 0px;">  
-                  Watchful user has spotted an issue with one of the visits.<br style="line-height: 100%;" /> 
+                  <div align="left" style="color: #333333; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif; font-size: 13px; line-height: 18px; margin-bottom: 18px; margin-top: 0px;">
+                  Watchful user has spotted an issue with one of the visits.<br style="line-height: 100%;" />
                   <p align="left" style="color: #333333; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif; font-size: 13px; font-weight: bold; line-height: 18px; margin-bottom: 0px;">
                   Notifier's e-mail: </p>
                   {email} <br style="line-height: 100%;" />
                    <p align="left" style="color: #333333; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif; font-size: 13px; font-weight: bold; line-height: 18px; margin-bottom: 0px;">
-                   Visitor: </p> 
+                   Visitor: </p>
                    {visitor} <br style="line-height: 100%;" /> {institution} <br style="line-height: 100%;" /> ({from_date} to {to_date}) <br style="line-height: 100%;" />
                    <p align="left" style="color: #333333; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif; font-size: 13px; font-weight: bold; line-height: 18px; margin-bottom: 0px;">
                    Problem description: </p>
                    {problem-description} <br style="line-height: 100%;" />
-                   <br style="line-height: 100%;" />Direct link to edit that visit: <a href="http://www.karlkerem.com/brainspotting/visits/edit_visit?id={visit_id}" style="color: #4d90fe; font-weight: bold; text-decoration: none;">www.karlkerem.com/brainspotting/visits/edit_visit?id={visit_id}</a> <br style="line-height: 100%;" />
+                   <br style="line-height: 100%;" />Direct link to edit that visit: <a href="http://www.cs.manchester.ac.uk/our-research/research-visitors/visits/edit_visit?id={visit_id}" style="color: #4d90fe; font-weight: bold; text-decoration: none;">www.karlkerem.com/brainspotting/visits/edit_visit?id={visit_id}</a> <br style="line-height: 100%;" />
                    <br style="line-height: 100%;" /> CS Research Visitors Map</div> </td> </tr>
                 <tr style="border-collapse: collapse;">
                  <td height="10" style="border-collapse: collapse; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;" width="580">

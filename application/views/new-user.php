@@ -1,23 +1,22 @@
 <?php $this->load->helper('form'); ?>
 <?php $this->load->helper('url'); ?>
 
-<script type="text/javascript" src="http://jzaefferer.github.com/jquery-validation/jquery.validate.js"></script>
 <script src="<?php print site_url();?>js/user-form-validation.js"></script>
 <script src="<?php print site_url();?>js/pGenerator.jquery.js"></script>
 
-<div class="container main-content">	
+<div class="container main-content">
 	<hr>
 <div class="row">
 <div class="span12 ">
-  <?php 
+  <?php
   $attributes = array('class'=> "form-horizontal well", 'id' => "new_user_form");
   echo form_open('users/do_new_user', $attributes);
   ?>
         <fieldset>
           <legend>Create new user <small>(all fields are compulsory)</small></legend>
-          <?php echo "<p>". validation_errors(). "</p>"; 
+          <?php echo "<p>". validation_errors(). "</p>";
 		  if (isset($error)) echo "<p>". $error. "</p>";
-		  ?>  
+		  ?>
           <div class="control-group">
             <label class="control-label" for="first_name">First Name</label>
             <div class="controls">
@@ -66,7 +65,7 @@
               <input type="text" class="input" id="email_repeat" name="email_repeat" value="<?php echo set_value('email_repeat'); ?>">
               <span class="help-inline"><small></small></span>
             </div>
-          </div>         
+          </div>
           <div class="control-group hidden">
             <label class="control-label" for="user_type">User Type</label>
             <div class="controls">
@@ -90,32 +89,29 @@
 				  No, this user is never hosting visitors
 				</label>
             </div>
-          </div>  
+          </div>
           <div class="control-group">
             <label class="control-label" for="research_group">Research Group</label>
             <div class="controls">
 				<select class="input new-user-group" id="research_group" name="research_group">
 					<option value="N/A" <?php echo set_select('research_group', 'N/A'); ?> >N/A</option>
-				<?php foreach($research_groups as $group) 
-				{ 
-				echo "<option value='".$group."' " .set_select('research_group', $group). ">".$group."</option>";			
+				<?php foreach($research_groups as $group)
+				{
+				echo "<option value='".$group."' " .set_select('research_group', $group). ">".$group."</option>";
 				}?>
 				</select>
               <span class="help-inline"><small></small></span>
             </div>
-          </div>          
-          
+          </div>
+
           <div class="form-actions">
             <button type="submit" class="btn btn-success">Create new User</button>
             <a type="btn" href="<?php print site_url();?>" class="btn">Cancel</a>
             <p><small>An e-mail will be sent to the new user with his username and password.</small></p>
           </div>
-          
-        </fieldset>
-      </form>		
-</div>		
-</div>		
-	</div>
-		
-	
 
+        </fieldset>
+      </form>
+</div>
+</div>
+	</div>

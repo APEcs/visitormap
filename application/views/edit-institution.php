@@ -1,17 +1,16 @@
 <?php $this->load->helper('form'); ?>
 <?php $this->load->helper('url'); ?>
 
-<script type="text/javascript" src="http://jzaefferer.github.com/jquery-validation/jquery.validate.js"></script>
 <script src="<?php print site_url();?>js/jquery-ui-1.10.2.custom.min.js"></script>
 <script src="<?php print site_url();?>js/select2.min.js"></script>
 <script src="<?php print site_url();?>js/edit.institution.js"></script>
 
-<div class="container main-content">	
+<div class="container main-content">
 	<hr>
 <div class="row">
 <div class="span12 ">
 <div class="well">
-  <?php 
+  <?php
   $attributes = array('class'=> "", 'id' => "edit_institution_form");
   $hidden = array('inst_id' => $inst["id"], 'lat' => $inst["lat"], 'long' => $inst["long"]);
   echo form_open('visits/do_edit_visit', $attributes, $hidden);
@@ -26,7 +25,7 @@
            	  <button type="button" id="search" style="cursor: pointer;" onclick="searchInstitution()" class="btn">Search</button>
             </div>
           </div>
-          
+
           <span class="help-inline help-about-inst-map"><small>Right-click on the map to adjust the location.</small></span>
 		  <div class="institution-map">
 			<div id="map_canvas" style="width:100%; height:100%"></div>
@@ -61,26 +60,24 @@
             <label class="control-label" for="countrySelector">Country</label>
             <div class="controls">
 				<select class="input" id="countrySelector" name="countrySelector">
-					<?php foreach($countries as $country) 
+					<?php foreach($countries as $country)
 					{
-					if($country["id"]==$inst["country_id"]) 
-						echo "<option value='".$country['alpha_2']."' " .set_select('returning_guest', $country['alpha_2'], TRUE). ">".$country['name']."</option>";			
+					if($country["id"]==$inst["country_id"])
+						echo "<option value='".$country['alpha_2']."' " .set_select('returning_guest', $country['alpha_2'], TRUE). ">".$country['name']."</option>";
 					else
 						echo "<option value='".$country['alpha_2']."' " .set_select('returning_guest', $country['alpha_2']). ">".$country['name']."</option>";
 					}?>
 				</select>
               <span class="help-inline"><small></small></span>
             </div>
-          </div> 		          
+          </div>
           <div class="new-institution-actions">
           	<a type="btn" onclick="saveInstitution()" class="btn btn-success">Save Institution</a>
             <a type="btn" onclick="cancelButtonClick()" class="btn">Cancel</a>
           </div>
           </fieldset>
-		</form>	
-</div>	<!-- end of well -->		
-</div>	<!-- end of span12 -->	
-</div>	<!-- end of row -->	
-</div>	
-	
-
+		</form>
+</div>	<!-- end of well -->
+</div>	<!-- end of span12 -->
+</div>	<!-- end of row -->
+</div>

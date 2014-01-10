@@ -89,7 +89,7 @@
              </td>
              <td style="border-collapse: collapse; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;" width="580">
               <div align="center">
-               <p style="color: #ffffff; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif; font-size: 36px; margin-bottom: 30px; margin-top: 0px; text-align: center;"><strong><a href="http://www.karlkerem.com/brainspotting" style="color: #ffffff; font-size: 36px; font-weight: bold; text-decoration: none;">CS Research Visitors Map</a></strong> </p> </div> </td>
+               <p style="color: #ffffff; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif; font-size: 36px; margin-bottom: 30px; margin-top: 0px; text-align: center;"><strong><a href="http://www.cs.manchester.ac.uk/our-research/research-visitors/" style="color: #ffffff; font-size: 36px; font-weight: bold; text-decoration: none;">CS Research Visitors Map</a></strong> </p> </div> </td>
              <td style="border-collapse: collapse; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;" width="30">
              </td> </tr> </tbody>
           </table> </td> </tr>
@@ -113,7 +113,7 @@
                   Congratulations, you have been granted access to CS Research Visitors Map!
                   </p>
                   <div align="left" style="color: #333333; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif; font-size: 13px; line-height: 18px; margin-bottom: 18px; margin-top: 0px;">
-                  One of the administrators has been kind enough to create you an account. From now on you can log in to the CS Research Visitors Map and enjoy privileged features meant only for the lucky few.  
+                  One of the administrators has been kind enough to create you an account. From now on you can log in to the CS Research Visitors Map and enjoy privileged features meant only for the lucky few.
                   </div> </td> </tr>
                 <tr style="border-collapse: collapse;">
                  <td height="10" style="border-collapse: collapse; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;" width="580">
@@ -126,10 +126,10 @@
                  <td style="border-collapse: collapse; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;" width="580">
                   <p align="left" style="color: #333333; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif; font-size: 18px; font-weight: bold; line-height: 24px; margin-bottom: 18px; margin-top: 0px;">
                   Here's your login details</p>
-                  <div align="left" style="color: #333333; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif; font-size: 13px; line-height: 18px; margin-bottom: 18px; margin-top: 0px;">  
-                  Username: {username}<br style="line-height: 100%;" /> 
+                  <div align="left" style="color: #333333; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif; font-size: 13px; line-height: 18px; margin-bottom: 18px; margin-top: 0px;">
+                  Username: {username}<br style="line-height: 100%;" />
                   Password: {password}<br style="line-height: 100%;" />
-                   <br style="line-height: 100%;" />When you log in for the first time you will be asked to choose a new password. <br style="line-height: 100%;" /><br style="line-height: 100%;" /> Continue to our website: <a href="http://www.karlkerem.com/brainspotting" style="color: #4d90fe; font-weight: bold; text-decoration: none;">www.karlkerem.com/brainspotting</a><br style="line-height: 100%;" />
+                   <br style="line-height: 100%;" />When you log in for the first time you will be asked to choose a new password. <br style="line-height: 100%;" /><br style="line-height: 100%;" /> Continue to our website: <a href="http://www.cs.manchester.ac.uk/our-research/research-visitors/" style="color: #4d90fe; font-weight: bold; text-decoration: none;">www.karlkerem.com/brainspotting</a><br style="line-height: 100%;" />
                    <br style="line-height: 100%;" /> Sincerely, <br style="line-height: 100%;" />
                    <br style="line-height: 100%;" /> CS Research Visitors Map team </div> </td> </tr>
                 <tr style="border-collapse: collapse;">

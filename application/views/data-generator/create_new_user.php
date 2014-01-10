@@ -1,14 +1,13 @@
 <?php $this->load->helper('form'); ?>
 <?php $this->load->helper('url'); ?>
 
-<script type="text/javascript" src="http://jzaefferer.github.com/jquery-validation/jquery.validate.js"></script>
 <script src="<?php print site_url();?>js/data-generator/user-form-validation.js"></script>
 
-	<div class="container">	
+	<div class="container">
 
 <div class="span10 offset1">
 <h1>Data Generator.</h1>
-  <?php 
+  <?php
   $attributes = array('class'=> "form-horizontal well", 'id' => "new_user_form");
   echo form_open('data-generator/createUser', $attributes);
   ?>
@@ -55,12 +54,12 @@
               <input type="text" class="input" id="email_repeat" name="email_repeat" value="<?php echo set_value('email_repeat'); ?>">
               <span class="help-inline"><small></small></span>
             </div>
-          </div>         
-          
- 		  <?php echo "<p>". validation_errors(). "</p>"; 
+          </div>
+
+ 		  <?php echo "<p>". validation_errors(). "</p>";
 		  if (isset($error)) echo "<p>". $error. "</p>";
-		  ?>         
-            
+		  ?>
+
 <!--           <div class="control-group error"> -->
 <!--             <label class="control-label" for="inputError">Input with error</label> -->
 <!--             <div class="controls"> -->
@@ -74,10 +73,7 @@
             <a type="btn" href="<?php print site_url();?>data-generator" class="btn">Cancel</a>
           </div>
         </fieldset>
-      </form>		
-</div>		
-		
-	</div>
-		
-	
+      </form>
+</div>
 
+	</div>

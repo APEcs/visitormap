@@ -1,5 +1,4 @@
 <?php $this->load->helper('form'); ?>
-<script type="text/javascript" src="http://jzaefferer.github.com/jquery-validation/jquery.validate.js"></script>
 
 <script type="text/javascript">
 
@@ -12,7 +11,7 @@ $(document).ready(function(){
   var $err_close = "</small></div>";
 
 $("#password").focus();
-		  
+
 $('#change-password-modal').modal({
 	backdrop: 'static',
 	keyboard: false
@@ -21,13 +20,13 @@ $('#change-password-modal').modal({
 $('#change-password-modal').modal('show');
 
 
-$("#login-form").validate({         
+$("#login-form").validate({
 
   errorPlacement: function(error, element) {
 		error.insertAfter(element.next());
-	    }, 	  
-  
-rules: {  
+	    },
+
+rules: {
 	password: {
 		required: true,
 		minlength: 6
@@ -35,7 +34,7 @@ rules: {
 	password_repeat: {
 		equalTo: "#password"
 	}
-  },   
+  },
 
 
 messages: {
@@ -45,7 +44,7 @@ messages: {
       },
       password_repeat: {
    	 equalTo: $err_open + "Passwords don't match!" + $err_close
-    },    
+    },
   }
 });
 });
@@ -55,15 +54,15 @@ messages: {
 
 
 	<div class="modal bigModal" id="change-password-modal" tabindex="-1" role="dialog" aria-labelledby="change-password-modal-label" aria-hidden="true" style='display: none;' >
-		
+
 		<div class="modal-header">
 			<h3 id="change-password-modal-label">Change your password</h3><br>
 			<p>This is your first time to log in.<br> For security reasons you need to change your default password.</p>
 		</div>
-		
+
 		<div class="modal-body">
 			<div class="change-pass-container">
-			  <?php 
+			  <?php
 			  $attributes = array('class' => '', 'id' =>"login-form");
 			  echo form_open('users/change_password', $attributes);
 			  ?>
@@ -83,21 +82,19 @@ messages: {
 		              <input type="password" class="input" id="password_repeat" name="password_repeat">
 		              <span class="help-inline"><small></small></span>
 		            </div>
-		          </div>       
-		
+		          </div>
+
 		          <div class="change-pass-actions">
 		            <button type="submit" class="btn btn-success">Save new password</button>
 		            <a type="btn" href="<?php print site_url();?>home/logout" class="btn">Log Out</a>
 		          </div>
-				</form>		
-			  	
+				</form>
+
 			  </p>
-			  <?php echo "<p><small>". validation_errors(). "</small></p>"; 
+			  <?php echo "<p><small>". validation_errors(). "</small></p>";
 			  if (isset($login_error)) echo "<p><small>". $login_error. "</small></p>";
 			  ?>
 			</div>
 		</div>
-		
-	</div>
-		
 
+	</div>

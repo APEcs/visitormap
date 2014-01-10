@@ -8,7 +8,5 @@ $config['crlf'] = '\r\n';
 $config['newline'] = '\r\n';
 $config['useragent'] = 'CS Research Visitors Map';
 
-$config['def_from'] = 'brainspotting@karlkerem.com';
+$config['def_from'] = 'support@cs.man.ac.uk';
 $config['def_from_name'] = 'CS Research Visitors Map';
-
-

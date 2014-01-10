@@ -1,15 +1,14 @@
 <?php $this->load->helper('form'); ?>
 <?php $this->load->helper('url'); ?>
 
-<script type="text/javascript" src="http://jzaefferer.github.com/jquery-validation/jquery.validate.js"></script>
 <script src="<?php print site_url();?>js/user-form-validation.js"></script>
 <script src="<?php print site_url();?>js/pGenerator.jquery.js"></script>
 
-<div class="container main-content">	
+<div class="container main-content">
 	<hr>
 <div class="row">
 <div class="span12 ">
-  <?php 
+  <?php
   $attributes = array('class'=> "form-horizontal well", 'id' => "new_user_form");
   echo form_open('users/do-edit-user', $attributes);
   ?>
@@ -56,7 +55,7 @@
               <input type="text" class="input" id="email_repeat" name="email_repeat" value="<?php echo set_value('email_repeat'); ?>">
               <span class="help-inline"><small></small></span>
             </div>
-          </div>         
+          </div>
           <div class="control-group">
             <label class="control-label" for="user_type">User Type</label>
             <div class="controls">
@@ -67,23 +66,20 @@
 				</select>
               <span class="help-inline"><small></small></span>
             </div>
-          </div> 
-          
-          
- 		  <?php echo "<p>". validation_errors(). "</p>"; 
+          </div>
+
+
+ 		  <?php echo "<p>". validation_errors(). "</p>";
 		  if (isset($error)) echo "<p>". $error. "</p>";
-		  ?>           
+		  ?>
 
           <div class="form-actions">
             <button type="submit" class="btn btn-success">Save Changes</button>
             <a type="btn" href="<?php print site_url();?>user_list" class="btn">Cancel</a>
           </div>
-          
-        </fieldset>
-      </form>		
-</div>		
-</div>		
-	</div>
-		
-	
 
+        </fieldset>
+      </form>
+</div>
+</div>
+	</div>
