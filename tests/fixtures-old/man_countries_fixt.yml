@@ -1,0 +1,31 @@
+
+row1: 
+  id: 1
+  region_id: 4
+  name: "Afghanistan"
+  alpha_2: "af"
+  alpha_3: "afg"
+row2: 
+  id: 2
+  region_id: 4
+  name: "Aland Islands"
+  alpha_2: "ax"
+  alpha_3: "ala"
+row3: 
+  id: 3
+  region_id: 2
+  name: "Albania"
+  alpha_2: "al"
+  alpha_3: "alb"
+row4: 
+  id: 4
+  region_id: 4
+  name: "Algeria"
+  alpha_2: "dz"
+  alpha_3: "dza"
+row5: 
+  id: 5
+  region_id: 4
+  name: "American Samoa"
+  alpha_2: "as"
+  alpha_3: "asm"

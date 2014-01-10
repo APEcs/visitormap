@@ -1,0 +1,31 @@
+
+row1: 
+  session_id: "0f1f31472cf020a1e29de592cf7b13dc"
+  ip_address: "0.0.0.0"
+  user_agent: "0"
+  last_activity: 1361104229
+  user_data: ""
+row2: 
+  session_id: "11cdd9af7ae32ad017224fc4e4272db3"
+  ip_address: "0.0.0.0"
+  user_agent: "0"
+  last_activity: 1361102508
+  user_data: ""
+row3: 
+  session_id: "1ddcb4aec49c92931fd759875b90fded"
+  ip_address: "0.0.0.0"
+  user_agent: "0"
+  last_activity: 1361104378
+  user_data: ""
+row4: 
+  session_id: "1ef40091effcb69bbee345b17586f033"
+  ip_address: "0.0.0.0"
+  user_agent: "0"
+  last_activity: 1361028967
+  user_data: ""
+row5: 
+  session_id: "1fe3767399972b1e10b2a37db21e7756"
+  ip_address: "0.0.0.0"
+  user_agent: "0"
+  last_activity: 1361104357
+  user_data: ""

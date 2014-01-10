@@ -1,0 +1,62 @@
+
+row1: 
+  id: 1
+  ip_address: "\0\0"
+  username: "administrator"
+  password: >
+    "59beecdf7fc966e2f17fd8f65a4a9aeb09d4a3d4"
+  salt: "9462e8eee0"
+  email: "admin@admin.com"
+  activation_code: ""
+  forgotten_password_code: ""
+  forgotten_password_time: 
+  remember_code: ""
+  created_on: -15740
+  last_login: -15740
+  active: 1
+  first_name: "Admin"
+  last_name: "istrator"
+  company: "ADMIN"
+  phone: "0"
+  money: 0.00
+row2: 
+  id: 2
+  ip_address: >
+    "���������������"
+  username: "karl@karlkerem.com"
+  password: >
+    "9692acddee2f68bc7762c0f55d551d70afd43b61"
+  salt: ""
+  email: "karl@karlkerem.com"
+  activation_code: ""
+  forgotten_password_code: ""
+  forgotten_password_time: 
+  remember_code: ""
+  created_on: 1359997462
+  last_login: 1360781801
+  active: 1
+  first_name: "Karl"
+  last_name: "Kerem"
+  company: ""
+  phone: ""
+  money: 70177.00
+row3: 
+  id: 3
+  ip_address: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+  username: "robert.stevens@manchester.ac.uk"
+  password: >
+    "0799cdaafd0858e2c2ebf643294f1c74a12b354d"
+  salt: ""
+  email: "robert.stevens@manchester.ac.uk"
+  activation_code: ""
+  forgotten_password_code: ""
+  forgotten_password_time: 
+  remember_code: ""
+  created_on: 1360781902
+  last_login: 1360781902
+  active: 1
+  first_name: "Robert"
+  last_name: "Stevens"
+  company: ""
+  phone: ""
+  money: 10000.00

@@ -1,0 +1,48 @@
+
+row1: 
+  id: 1
+  country_id: 1
+  lat: "51.7582033"
+  long: "-1.2543938"
+  name: "University of Oxford"
+  address1: "Hello world"
+  address2: "Blah"
+  address3: ""
+row2: 
+  id: 2
+  country_id: 1
+  lat: "52.20556"
+  long: "0.116596"
+  name: "University of Cambridge"
+  address1: "Hello world"
+  address2: ""
+  address3: ""
+row3: 
+  id: 3
+  country_id: 1
+  lat: "51.498766"
+  long: "-0.174522"
+  name: "Imperial College London"
+  address1: "Hello world"
+  address2: "Blah"
+  address3: "Hoho"  
+row4: 
+  id: 4
+  country_id: 2
+  lat: "47.3775448"
+  long: "8.5478786"
+  name: >
+    "\"Swiss Federal Institute of Technology
+    Zürich\""
+  address1: "Hello world"
+  address2: "Blah"
+  address3: ""
+row5: 
+  id: 5
+  country_id: 1
+  lat: "43.0082548"
+  long: "-81.2733051"
+  name: "University College London"
+  address1: "Hello world"
+  address2: "Blah"
+  address3: ""

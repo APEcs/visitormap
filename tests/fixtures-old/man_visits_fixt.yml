@@ -1,0 +1,46 @@
+
+row1: 
+  id: 1
+  group_id: 1
+  institution_id: 2
+  host_id: 2
+  guest_id: 134
+  from_date: "1995-03-21"
+  to_date: "1995-05-21"
+  hide_name: 0
+row2: 
+  id: 2
+  group_id: 2
+  institution_id: 3
+  host_id: 2
+  guest_id: 133
+  from_date: "1995-07-18"
+  to_date: "1995-10-02"
+  hide_name: 0
+row3: 
+  id: 3
+  group_id: 3
+  institution_id: 3
+  host_id: 3
+  guest_id: 132
+  from_date: "1995-10-06"
+  to_date: "1995-11-13"
+  hide_name: 0
+row4: 
+  id: 4
+  group_id: 1
+  institution_id: 4
+  host_id: 3
+  guest_id: 134
+  from_date: "1995-06-09"
+  to_date: "1995-08-05"
+  hide_name: 1
+row5: 
+  id: 5
+  group_id: 2
+  institution_id: 5
+  host_id: 3
+  guest_id: 132
+  from_date: "1995-09-02"
+  to_date: "1995-10-19"
+  hide_name: 0

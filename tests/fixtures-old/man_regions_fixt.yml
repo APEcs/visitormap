@@ -1,0 +1,13 @@
+
+row1: 
+  id: 1
+  name: "UK"
+row2: 
+  id: 2
+  name: "Europe"
+row3: 
+  id: 3
+  name: "North-America"
+row4: 
+  id: 4
+  name: "Rest of the World"
