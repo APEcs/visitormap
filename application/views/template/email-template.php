@@ -129,7 +129,7 @@
                   <div align="left" style="color: #333333; font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif; font-size: 13px; line-height: 18px; margin-bottom: 18px; margin-top: 0px;">
                   Username: {username}<br style="line-height: 100%;" />
                   Password: {password}<br style="line-height: 100%;" />
-                   <br style="line-height: 100%;" />When you log in for the first time you will be asked to choose a new password. <br style="line-height: 100%;" /><br style="line-height: 100%;" /> Continue to our website: <a href="http://www.cs.manchester.ac.uk/our-research/research-visitors/" style="color: #4d90fe; font-weight: bold; text-decoration: none;">www.karlkerem.com/brainspotting</a><br style="line-height: 100%;" />
+                   <br style="line-height: 100%;" />When you log in for the first time you will be asked to choose a new password. <br style="line-height: 100%;" /><br style="line-height: 100%;" /> Continue to our website: <a href="http://www.cs.manchester.ac.uk/our-research/research-visitors/" style="color: #4d90fe; font-weight: bold; text-decoration: none;">http://www.cs.manchester.ac.uk/our-research/research-visitors/</a><br style="line-height: 100%;" />
                    <br style="line-height: 100%;" /> Sincerely, <br style="line-height: 100%;" />
                    <br style="line-height: 100%;" /> CS Research Visitors Map team </div> </td> </tr>
                 <tr style="border-collapse: collapse;">

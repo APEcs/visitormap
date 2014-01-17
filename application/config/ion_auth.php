@@ -81,7 +81,7 @@ $config['max_rounds']     = 9;
  | The controller should check this function and act
  | appropriately. If this variable set to 0, there is no maximum.
  */
-$config['site_title']           = "karlkerem.com/brainspotting"; 		// Site Title, example.com
+$config['site_title']           = "xerxes.cs.manchester.ac.uk/visitors_map"; 		// Site Title, example.com
 $config['admin_email']          = "admin@example.com"; 	// Admin Email, admin@example.com
 $config['default_group']        = 'staff'; 			// Default group, use name
 $config['admin_group']          = 'admin'; 				// Default administrators group, use name
